@@ -84,6 +84,8 @@ return {
         -- Перемещение в начало и конец строки
         [",j"] = { "^", desc = "Go to beginning of line" },
         [",k"] = { "$", desc = "Go to end of line" },
+        -- Выделить весь текст в документе
+        ["<C-a>"] = { "ggVG", desc = "Go to beginning of line" },
       },
       v = {
         -- Копирование в глобальный буфер обмена (visual mode)
