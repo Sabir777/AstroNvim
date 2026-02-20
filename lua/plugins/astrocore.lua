@@ -88,6 +88,10 @@ return {
         [",k"] = { "$", desc = "Go to end of line" },
         -- Выделить весь текст в документе
         ["<C-a>"] = { "ggVG", desc = "Go to beginning of line" },
+        -- магический поиск вперед
+        ["/"] = { "/\\v", desc = "Search with magic" },
+        -- магический поиск назад
+        ["?"] = { "?\\v", desc = "Search with magic back" },
       },
       v = {
         -- Копирование в глобальный буфер обмена (visual mode)
