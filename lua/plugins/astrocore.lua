@@ -92,6 +92,8 @@ return {
         ["/"] = { "/\\v", desc = "Search with magic" },
         -- магический поиск назад
         ["?"] = { "?\\v", desc = "Search with magic back" },
+        -- повторить последнюю команду
+        [",."] = { "@:", desc = "Repeat last command" },
       },
       v = {
         -- Копирование в глобальный буфер обмена (visual mode)
@@ -102,6 +104,8 @@ return {
         [",j"] = { "^", desc = "Go to beginning of line" },
         -- Перемещение в конец строки
         [",k"] = { "$", desc = "Go to end of line" },
+        -- применить последнюю команду к выделенным строкам
+        [",."] = { ":normal @:<CR>", desc = "Repeat last command on selection" },
       },
       c = {
         -- Вставка из глобального буфера обмена (cmd mode)
