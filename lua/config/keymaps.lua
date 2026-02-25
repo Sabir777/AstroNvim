@@ -22,3 +22,10 @@ vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
 
 -- Копировать строку от текущего символа и до конца строки
 vim.keymap.set("n", "Y", "y$", { desc = "Copy to end" })
+
+-- Магический поиск по-умолчанию
+vim.keymap.set("n", "/", "/\\v", { desc = "Search with magic" })
+vim.keymap.set("n", "?", "?\\v", { desc = "Search backward with magic" })
+
+-- Отключить подсветку после поиска
+vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>", { desc = "Clear search highlight" })
