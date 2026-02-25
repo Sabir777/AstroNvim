@@ -6,5 +6,10 @@
 vim.opt.number = true
 vim.opt.relativenumber = false
 
+-- Делаю визуальный отступ для курсора от границ экрана
+vim.opt.scrolloff = 5
+-- Задаю ширину строки
+vim.opt.textwidth = 120
+
 -- Включаю русский язык
 vim.opt.langmap = "ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\\"ZXCVBNM<>"
