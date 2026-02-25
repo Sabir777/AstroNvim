@@ -19,3 +19,6 @@ vim.keymap.set("n", "<leader>o", ":bn<CR>", { desc = "Next buffer" })
 
 -- Выделяю весь документ
 vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
+
+-- Копировать строку от текущего символа и до конца строки
+vim.keymap.set("n", "Y", "y$", { desc = "Copy to end" })
