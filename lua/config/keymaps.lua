@@ -8,3 +8,11 @@ vim.keymap.set("v", "<C-c>", '"+y', { desc = "Copy to clipboard" })
 -- Вставить из глобального буфера обмена
 vim.keymap.set({"n", "v"}, ",v", '"+p', { desc = "Paste from clipboard" })
 vim.keymap.set("c", ",v", "<C-r>+", { desc = "Paste from clipboard in cmdline" })
+
+-- Перемещение в начало и конец строки
+vim.keymap.set("n", "H", "^", { desc = "Start of line" })
+vim.keymap.set("n", "L", "$", { desc = "End of line" })
+
+-- Перемещение в предыдущий и последующий буферы
+vim.keymap.set("n", "<leader>i", ":bp<CR>", { desc = "Previous buffer" })
+vim.keymap.set("n", "<leader>o", ":bn<CR>", { desc = "Next buffer" })
