@@ -1,15 +1,6 @@
 -- lua/plugins/sql.lua
 return {
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        sqlls = {
-          enabled = false,
-        },
-      },
-    },
-  },
+  -- Форматирование через sqlfluff fix
   {
     "stevearc/conform.nvim",
     opts = {
@@ -19,7 +10,7 @@ return {
       formatters = {
         sqlfluff = {
           command = "sqlfluff",
-          args = { "fix", "-" },
+          args = { "fix", "--force", "-" },
           stdin = true,
         },
       },
@@ -29,6 +20,8 @@ return {
       },
     },
   },
+
+  -- Линтинг через sqlfluff lint
   {
     "mfussenegger/nvim-lint",
     opts = {
