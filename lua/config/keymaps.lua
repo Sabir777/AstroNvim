@@ -16,3 +16,6 @@ vim.keymap.set("n", "L", "$", { desc = "End of line" })
 -- Перемещение в предыдущий и последующий буферы
 vim.keymap.set("n", "<leader>i", ":bp<CR>", { desc = "Previous buffer" })
 vim.keymap.set("n", "<leader>o", ":bn<CR>", { desc = "Next buffer" })
+
+-- Выделяю весь документ
+vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
