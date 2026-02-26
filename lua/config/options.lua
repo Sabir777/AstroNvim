@@ -1,6 +1,7 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
+-- Опции LazyVim
+
+-- Устанавливаю время между нажатиями клавиш в хоткеях
+vim.opt.timeoutlen = 1000  -- 1 секунда
 
 -- Возвращаю обычную нумерацию строк
 vim.opt.number = true
