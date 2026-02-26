@@ -2,6 +2,8 @@
 
 -- Сохраниться
 vim.keymap.set("n", "<C-ы>", ":w<CR>", { desc = "Save" })
+-- Сохраниться и выйти
+vim.keymap.set("n", "ЯЯ", "ZZ", { desc = "Save and Exit" })
 
 -- Копировать в глобальный буфер обмена
 vim.keymap.set("v", "<C-c>", '"+y', { desc = "Copy to clipboard" })
