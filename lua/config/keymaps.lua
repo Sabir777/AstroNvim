@@ -11,9 +11,9 @@ vim.keymap.set("v", "<C-с>", '"+y', { desc = "Copy to clipboard", noremap = tru
 
 -- Вставить из глобального буфера обмена
 vim.keymap.set({"n", "v"}, ",v", '"+p', { desc = "Paste from clipboard", noremap = true})
-vim.keymap.set({"n", "v"}, ",м", '"+p', { desc = "Paste from clipboard", noremap = true })
+vim.keymap.set({"n", "v"}, "бм", '"+p', { desc = "Paste from clipboard", noremap = true })
 vim.keymap.set("c", ",v", "<C-r>+", { desc = "Paste from clipboard in cmdline", noremap = true })
-vim.keymap.set("c", ",м", "<C-r>+", { desc = "Paste from clipboard in cmdline", noremap = true })
+vim.keymap.set("c", "бм", "<C-r>+", { desc = "Paste from clipboard in cmdline", noremap = true })
 
 -- Перемещение в начало строки
 vim.keymap.set("n", "H", "^", { desc = "Start of line", noremap = true })
@@ -52,8 +52,8 @@ vim.keymap.set("n", "s", "s", { desc = "Substitute char", noremap = true })
 vim.keymap.set("n", "ы", "s", { desc = "Substitute char", noremap = true })
 
 -- Выполняю поиск символа не по строке а по всему документу
-vim.keymap.set("n", "f", function() require("flash").jump() end, { desc = "Flash jump", noremap = true })
-vim.keymap.set("n", "а", function() require("flash").jump() end, { desc = "Flash jump", noremap = true })
+vim.keymap.set("n", ",f", function() require("flash").jump() end, { desc = "Flash jump", noremap = true })
+vim.keymap.set("n", "ба", function() require("flash").jump() end, { desc = "Flash jump", noremap = true })
 
 -- Автодополнение
 vim.keymap.set("i", "<C-j>", "<C-n>", { desc = "Autocompletion", noremap = true })
