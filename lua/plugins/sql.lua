@@ -10,8 +10,9 @@ return {
       formatters = {
         sqlfluff = {
           command = "sqlfluff",
-          args = { "fix", "--force", "-" },
+          args = { "fix", "-" },
           stdin = true,
+          exit_codes = { 0, 1 },
         },
       },
       format_on_save = {
