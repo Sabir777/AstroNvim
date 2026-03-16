@@ -24,12 +24,12 @@ vim.keymap.set("n", "L", "$", { desc = "End of line", noremap = true })
 vim.keymap.set("n", "Д", "$", { desc = "End of line", noremap = true })
 
 -- Перемещение в предыдущий буфер
-vim.keymap.set("n", "<leader>i", ":bp<CR>", { desc = "Previous buffer", noremap = true })
-vim.keymap.set("n", "<leader>ш", ":bp<CR>", { desc = "Previous buffer", noremap = true })
+vim.keymap.set("n", "<leader>i", ":bp<CR>", { desc = "Previous buffer", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>ш", ":bp<CR>", { desc = "Previous buffer", noremap = true, silent = true })
 
 -- Перемещение в последующий буфер
-vim.keymap.set("n", "<leader>o", ":bn<CR>", { desc = "Next buffer", noremap = true })
-vim.keymap.set("n", "<leader>щ", ":bn<CR>", { desc = "Next buffer", noremap = true })
+vim.keymap.set("n", "<leader>o", ":bn<CR>", { desc = "Next buffer", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>щ", ":bn<CR>", { desc = "Next buffer", noremap = true, silent = true })
 
 -- Выделяю весь документ
 vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all", noremap = true })
