@@ -50,6 +50,8 @@ vim.keymap.set("n", "<leader>р", ":nohlsearch<CR>", { desc = "Clear search high
 -- Возвращаю поведение по-умолчанию на клавишу s
 vim.keymap.set("n", "s", "s", { desc = "Substitute char", noremap = true })
 vim.keymap.set("n", "ы", "s", { desc = "Substitute char", noremap = true })
+vim.keymap.set("n", "S", "S", { desc = "Substitute string", noremap = true })
+vim.keymap.set("n", "Ы", "S", { desc = "Substitute string", noremap = true })
 
 -- Выполняю поиск символа не по строке а по всему документу
 vim.keymap.set("n", ",f", function() require("flash").jump() end, { desc = "Flash jump", noremap = true })
